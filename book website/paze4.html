@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password</title>
+    <style>
+        body {
+            font-family: 'georgia', sans-serif;
+            margin: 0;
+            padding: 0;
+            background:url("cc.jpg") no-repeat center center/cover;
+            text-align: center;
+            color: white;
+        }
+
+        header {
+            background: linear-gradient(to right, #8e44ad, #c0392b);
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .container {
+            margin: 50px auto;
+            padding: 20px;
+            background: rgb(203, 203, 203);
+            color: black;
+            width: 50%;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        input, select {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .btn-image {
+            border: none;
+            background: none;
+            cursor: pointer;
+            
+
+        }
+
+        .btn-image img {
+            width: 100px;
+            height: 80px;
+            transition: transform 0.4s;
+            border-radius: 15px;
+        }
+
+        .btn-image img:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Forgot Your Password?
+    </header>
+    
+    <div class="container">
+        <h2>Reset Your Password</h2>
+        <form>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <br>
+            <label for="new-password">New Password:</label>
+            <input type="password" id="new-password" name="new-password" required>
+            
+            <label for="security-question">Security Question:</label>
+            <select id="security-question" name="security-question" required>
+                <option value="pet">What is your pet's name?</option>
+                <option value="school">What is the name of your first school?</option>
+                <option value="mother">What is your favourite sports?</option>
+            </select>
+            <br>
+            <label for="security-answer">Answer:</label>
+            <input type="text" id="security-answer" name="security-answer" placeholder="Your answer" required>
+            
+            <button type="submit" class="btn-image">
+                <img src="bb.jpg" alt="Submit Button"><a href="paze5.html"></a>
+            </button>
+        </form>
+    </div>
+</body>
+</html>
